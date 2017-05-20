@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.danielle.splashscreem.MainActivity">
+
+    <!-->Antes de colocar nos lugares certos</-->
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time S2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" /-->
+
+    <TextView
+        android:id="@+id/tvCabecalho"
+        style="@style/label_time_s2"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_above="@+id/tvRodape"
+        android:layout_below="@+id/tvCabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-->TextInputLayout animação
+                o ID é necessário para manipular um valor para outra tela
+            <-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nome" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_idade"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/times" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cadastrar"
+                android:text="@string/botao_cadastrar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvRodape"
+        style="@style/label_desenvolvido_por"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

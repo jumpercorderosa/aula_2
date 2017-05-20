@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SplashScreem</string>
+    <string name="time">Time S2</string>
+    <string name="desenvolvido_por">Desenvolvido por: Danielle</string>
+    <string name="hint_nome">Nome</string>
+    <string name="tilIdade">Idade</string>
+    <string name="hint_idade">Idade</string>
+
+    <string name="selecione_time">Selecione o time</string>
+    <string name="palmeiras">Palmeiras</string>
+    <string name="sao_paulo">São Paulo</string>
+    <string name="santos">Santos</string>
+
+    <string name="botao_cadastrar">Cadastrar</string>
+
+    <string name="confirmacao_cadastro">Olá, %1$s parabéns por torcer pelo %2$s!!!</string>
+
+</resources>
